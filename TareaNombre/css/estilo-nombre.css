@@ -1,0 +1,157 @@
+body{
+	display: flex; /*los atributos van a a estar uno detrás de otro*/
+}
+
+#contenedor{
+	width:250px;
+	height: 250px;
+	margin: auto;
+	margin-top: 50px;
+	-webkit-perspective: 700; /*webkit se pone cuando un navegador no sosporta ciertos atributos
+								perspective sirve para ver la rotación de mejor manera*/
+							  /*Dirve para que funcionene las transformaciones*/
+}
+
+.carta{
+	height: 100%;
+	width: 100%;
+	position: relative;
+	transform-style: preserve-3d;
+	transition: 2s;
+	/*box-shadow: 0 0 5px black;*/
+}
+
+#s1{
+	width: 100%;
+	height: 20%;
+	backface-visibility: hidden;
+	position: absolute;
+	background: blue;
+}
+
+#s2{
+	width: 20%;
+	height: 40%;
+	backface-visibility: hidden;
+	position: absolute;
+	background: blue;
+	transform: translateY(50px);
+}
+
+#s3{
+	width: 100%;
+	height: 20%;
+	backface-visibility: hidden;
+	position: absolute;
+	background: blue;
+	transform: translateY(100px);
+}
+
+#s4{
+	width: 20%;
+	height: 40%;
+	backface-visibility: hidden;
+	position: absolute;
+	background: blue;
+	transform: translate(200px, 150px);
+}
+
+#s5{
+	width: 100%;
+	height: 20%;
+	position: absolute;
+	background: blue;
+	transform: translateY(200px);
+}
+
+#e1{
+	width: 100%;
+	height: 20%;
+	position: absolute;
+	background: blue;
+}
+
+#e2{
+	width: 100%;
+	height: 20%;
+	position: absolute;
+	background: blue;
+	transform: translateY(100px);
+}
+
+#e3{
+	width: 100%;
+	height: 20%;
+	backface-visibility: hidden;
+	position: absolute;
+	background: blue;
+	transform: translateY(200px);
+}
+
+#e4{
+	width: 20%;
+	height: 100%;
+	position: absolute;
+	background: blue;
+}
+
+#b1{
+	width: 20%;
+	height: 100%;
+	position: absolute;
+	background: blue; 
+}
+
+#b2{
+	width: 100%;
+	height: 20%;
+	position: absolute;
+	background: blue;
+	transform: translateY(200px);
+}
+
+#b3{
+	width: 100%;
+	height: 20%;
+	position: absolute;
+	background: blue;
+	transform: translateY(100px);
+}
+
+#b4{
+	width: 20%;
+	height: 40%;
+	position: absolute;
+	background: blue;
+	transform: translate(200px,100px);
+}
+
+#a1{
+	width: 20%;
+	height: 100%;
+	position: absolute;
+	background: blue;
+}
+
+#a2{
+	width: 20%;
+	height: 100%;
+	position: absolute;
+	background: blue;
+	transform: translateX(200px);
+}
+
+#a3{
+	width: 100%;
+	height: 20%;
+	position: absolute;
+	background: blue;
+}
+
+#a4{
+	width: 100%;
+	height: 20%;
+	position: absolute;
+	background: blue;
+	transform: translateY(100px);
+}
